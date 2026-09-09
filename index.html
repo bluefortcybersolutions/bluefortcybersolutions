@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+  <title>BlueFort Cyber Solutions | Security that sees what others miss.</title>
+  <meta name="description" content="BlueFort Cyber Solutions helps organizations identify vulnerabilities, monitor security threats, investigate cyber incidents, and strengthen their overall security posture.">
+  <meta name="theme-color" content="#070e1b">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/modals.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+
+  <!-- Cyber Grid Subtle Background Effect -->
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR (MULTI-PAGE)
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="BlueFort Cyber Solutions Home">
+        <img src="assets/logo.png" alt="BlueFort Cyber Solutions Shield" class="brand-logo-img">
+        <div class="brand-text-wrapper">
+          <span class="brand-title">BlueFort</span>
+          <span class="brand-subtitle">Cyber Solutions</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="why-us.html" class="nav-link">Why BlueFort</a></li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Right CTA -->
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>Request Security Assessment</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. HERO SECTION
+       ========================================================================= -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Enterprise Cybersecurity & Risk Advisory</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-title-gradient">Security that sees what others miss.</span>
+          </h1>
+
+          <p class="hero-subheadline">
+            BlueFort Cyber Solutions helps organizations identify vulnerabilities, monitor security threats, investigate cyber incidents, and strengthen their overall security posture.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              <span>Request Security Assessment</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+            <a href="services.html" class="btn btn-secondary btn-lg">
+              <span>Explore Our Services</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-reassurance-list">
+            <div class="reassurance-item">
+              <svg class="reassurance-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              <span>100% Authorized Scope</span>
+            </div>
+            <div class="reassurance-item">
+              <svg class="reassurance-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+              </svg>
+              <span>Manual Vulnerability Validation</span>
+            </div>
+            <div class="reassurance-item">
+              <svg class="reassurance-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+              <span>Confidential & Responsible</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Visual -->
+        <div class="hero-visual-wrapper">
+          <canvas id="cyberCanvas" class="cyber-canvas"></canvas>
+          
+          <!-- Live Telemetry Card 1 -->
+          <div class="telemetry-card top-left">
+            <div class="telemetry-icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 8v4l3 3"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="telemetry-title">Perimeter Defense</div>
+              <div class="telemetry-sub">MONITORING ACTIVE</div>
+            </div>
+          </div>
+
+          <!-- Live Telemetry Card 2 -->
+          <div class="telemetry-card bottom-right">
+            <div class="telemetry-icon-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="telemetry-title">Manual Verification</div>
+              <div class="telemetry-sub">ZERO FALSE POSITIVES</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. TRUST SECTION
+       ========================================================================= -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="trust-intro">
+        <div class="section-tag">Enterprise Rigor</div>
+        <h2 class="trust-title">Security Focused. Business Driven.</h2>
+        <p class="trust-text">
+          We help organizations understand cybersecurity risks and take practical steps to improve their security.
+        </p>
+      </div>
+
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="trust-card-title">Authorized Security Testing</h3>
+          <p class="trust-card-desc">Conducted strictly within defined parameters and authorized legal scopes.</p>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h3 class="trust-card-title">Professional Reporting</h3>
+          <p class="trust-card-desc">Detailed findings with technical proof-of-concepts and executive roadmaps.</p>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+          </div>
+          <h3 class="trust-card-title">Business-Focused Risk Analysis</h3>
+          <p class="trust-card-desc">Translating complex technical vulnerabilities into clear operational impact.</p>
+        </div>
+
+        <div class="trust-card">
+          <div class="trust-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <h3 class="trust-card-title">Practical Security Recommendations</h3>
+          <p class="trust-card-desc">Actionable, engineering-ready remediation steps designed for immediate fix.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. SERVICES PREVIEW SECTION
+       ========================================================================= -->
+  <section class="section" id="services-preview">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Core Capabilities</div>
+        <h2 class="section-title">Cybersecurity Services Designed for Modern Organizations</h2>
+        <p class="section-subtitle">
+          We provide professional cybersecurity services to help organizations identify risks, improve visibility, respond to incidents, and strengthen their security posture.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1: VAPT -->
+        <div class="glass-card service-card" data-service-key="vapt" role="button" tabindex="0">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <span class="badge badge-info">Offensive Testing</span>
+          </div>
+          <h3 class="service-card-title">Vulnerability Assessment & Penetration Testing (VAPT)</h3>
+          <p class="service-card-desc">
+            Identify and validate security vulnerabilities across web applications, APIs, systems, and authorized environments.
+          </p>
+          <div class="service-card-highlights">
+            <span class="service-pill">Web Apps & APIs</span>
+            <span class="service-pill">Manual Validation</span>
+            <span class="service-pill">OWASP Top 10</span>
+          </div>
+          <div class="service-card-footer">
+            <button class="learn-more-btn" type="button">
+              <span>View Service Details</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Card 2: SOC -->
+        <div class="glass-card service-card" data-service-key="soc" role="button" tabindex="0">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <span class="badge badge-low">Defensive Ops</span>
+          </div>
+          <h3 class="service-card-title">SOC & Security Monitoring</h3>
+          <p class="service-card-desc">
+            Monitor security events, analyze suspicious activity, and help organizations improve threat visibility.
+          </p>
+          <div class="service-card-highlights">
+            <span class="service-pill">Log Analysis</span>
+            <span class="service-pill">Threat Detection</span>
+            <span class="service-pill">Incident Triage</span>
+          </div>
+          <div class="service-card-footer">
+            <button class="learn-more-btn" type="button">
+              <span>View Service Details</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service Card 3: Forensics -->
+        <div class="glass-card service-card" data-service-key="forensics" role="button" tabindex="0">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+              </svg>
+            </div>
+            <span class="badge badge-high">Rapid Response</span>
+          </div>
+          <h3 class="service-card-title">Cyber Forensics & Incident Response</h3>
+          <p class="service-card-desc">
+            Investigate cyber incidents, analyze digital evidence, and support organizations during security incidents.
+          </p>
+          <div class="service-card-highlights">
+            <span class="service-pill">Evidence Analysis</span>
+            <span class="service-pill">Root Cause Analysis</span>
+            <span class="service-pill">Containment</span>
+          </div>
+          <div class="service-card-footer">
+            <button class="learn-more-btn" type="button">
+              <span>View Service Details</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="services.html" class="btn btn-outline-cyan">
+          <span>View All 5 Services & Full Deliverables</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. INTERACTIVE SECURITY ESTIMATOR (POINTWISE DESCRIPTIONS)
+       ========================================================================= -->
+  <section class="assessment-tool-section">
+    <div class="container">
+      <div class="assessment-container">
+        <div class="section-tag">Interactive Planner</div>
+        <h2 style="font-size:1.85rem; color:#ffffff; margin-bottom:0.75rem;">Identify Your Cybersecurity Needs</h2>
+        <p style="color:var(--text-muted); margin-bottom:2rem;">
+          Select your environment and primary objective to receive a customized, point-wise security assessment recommendation.
+        </p>
+
+        <div class="assessment-grid">
+          <div>
+            <div class="tool-step-title">1. Select Your Digital Footprint:</div>
+            <div class="option-pill-group">
+              <button type="button" class="tool-pill asset-pill selected" data-asset="web-api">Web Applications & APIs</button>
+              <button type="button" class="tool-pill asset-pill" data-asset="cloud">Cloud Infrastructure (AWS/GCP/Azure)</button>
+              <button type="button" class="tool-pill asset-pill" data-asset="network">Corporate Network & Servers</button>
+              <button type="button" class="tool-pill asset-pill" data-asset="workforce">Remote Workforce & Endpoints</button>
+            </div>
+
+            <div class="tool-step-title">2. Select Your Primary Objective:</div>
+            <div class="option-pill-group">
+              <button type="button" class="tool-pill concern-pill selected" data-concern="vapt">Find Unknown Vulnerabilities</button>
+              <button type="button" class="tool-pill concern-pill" data-concern="monitoring">Ongoing Threat Monitoring</button>
+              <button type="button" class="tool-pill concern-pill" data-concern="incident">Investigate a Suspected Incident</button>
+              <button type="button" class="tool-pill concern-pill" data-concern="audit">Complete Security Posture Audit</button>
+              <button type="button" class="tool-pill concern-pill" data-concern="human">Improve Employee Security Culture</button>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <div>
+              <div style="font-size:0.78rem; font-weight:700; color:var(--cyan-400); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.4rem;">Recommended Engagement</div>
+              <h3 class="result-title" id="estimatorResultTitle">Web Application & API Penetration Testing</h3>
+              <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.6;" id="estimatorResultDesc">
+                Comprehensive manual and automated offensive testing targeting web application vulnerabilities, exposed API endpoints, and authentication logic.
+              </p>
+              <ul class="result-rec-list" id="estimatorResultList">
+                <!-- Point-wise items injected dynamically by assessment-tool.js -->
+              </ul>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="estimatorCta" data-target-service="VAPT" style="width:100%;">
+              <span>Request This Assessment</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. CONTACT SECTION (WHATSAPP DIRECT & SANITIZED)
+       ========================================================================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Direct Inquiry</div>
+        <h2 class="section-title">Let's Strengthen Your Security</h2>
+        <p class="section-subtitle">
+          Talk with BlueFort Cyber Solutions about your cybersecurity requirements.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <form id="securityContactForm" novalidate autocomplete="off">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" id="fullName" class="form-input" placeholder="e.g. Alexander Mitchell" maxlength="50" required>
+              </div>
+              <div class="form-group">
+                <label for="companyName" class="form-label">Company Name *</label>
+                <input type="text" id="companyName" class="form-input" placeholder="e.g. Apex Financial Technologies" maxlength="80" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="businessEmail" class="form-label">Business Email *</label>
+                <input type="email" id="businessEmail" class="form-input" placeholder="name@company.com" maxlength="80" required>
+              </div>
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone Number *</label>
+                <input type="tel" id="phoneNumber" class="form-input" placeholder="+1 (555) 019-2834" maxlength="20" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceRequired" class="form-label">Service Required *</label>
+              <select id="serviceRequired" class="form-select" required>
+                <option value="" disabled selected>Select a Service</option>
+                <option value="VAPT">VAPT (Vulnerability Assessment & Penetration Testing)</option>
+                <option value="SOC & Security Monitoring">SOC & Security Monitoring</option>
+                <option value="Cyber Forensics & Incident Response">Cyber Forensics & Incident Response</option>
+                <option value="Security Audit & Risk Assessment">Security Audit & Risk Assessment</option>
+                <option value="Security Awareness & Consulting">Security Awareness & Consulting</option>
+                <option value="Other">Other Cybersecurity Inquiries</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Scope & Requirements Message *</label>
+              <textarea id="message" class="form-textarea" placeholder="Briefly describe your environment, target systems, timeline, or primary security goals..." maxlength="1000" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-checkbox-label">
+                <input type="checkbox" id="authCheckbox" class="form-checkbox" required>
+                <span class="checkbox-text">
+                  <strong>I understand that security testing requires proper authorization.</strong> All activities will only proceed under agreed scopes and legal authorization.
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" id="submitContactBtn" style="width:100%;">
+              <span>Submit Security Request</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- What Happens Next Sidebar -->
+        <div class="what-happens-card">
+          <h3 class="what-happens-title">What Happens Next?</h3>
+
+          <div class="next-steps-list">
+            <div class="next-step-item">
+              <div class="next-step-number">1</div>
+              <div>
+                <h4 class="next-step-heading">We Review Your Request</h4>
+                <p class="next-step-desc">We review your submission and understand your cybersecurity requirements.</p>
+              </div>
+            </div>
+
+            <div class="next-step-item">
+              <div class="next-step-number">2</div>
+              <div>
+                <h4 class="next-step-heading">We Discuss the Scope</h4>
+                <p class="next-step-desc">We discuss the appropriate service, objectives, and authorized testing parameters.</p>
+              </div>
+            </div>
+
+            <div class="next-step-item">
+              <div class="next-step-number">3</div>
+              <div>
+                <h4 class="next-step-heading">We Plan the Engagement</h4>
+                <p class="next-step-desc">We define the rules of engagement and execute the security assessment responsibly.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="direct-contact-box">
+            <div class="direct-contact-title">Direct Inquiries</div>
+            <div class="direct-contact-channels">
+              <div>
+                <span style="color:var(--text-muted);">Email:</span>
+                <span style="color:var(--text-white);"> bluefortcyber.solutions@gmail.com</span>
+              </div>
+              <div>
+                <span style="color:var(--text-muted);">WhatsApp:</span>
+                <span style="color:var(--cyan-300);"> Instant Lead Dispatch Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-disclaimer-box">
+        <svg class="disclaimer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+        <div class="disclaimer-text">
+          <strong>Important Disclaimer:</strong> All cybersecurity testing, monitoring, and investigation activities are performed only with proper authorization and within the agreed scope of work.
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom:0.75rem;">
+            <img src="assets/logo.png" alt="BlueFort Cyber Solutions" class="brand-logo-img">
+            <div class="brand-text-wrapper">
+              <span class="brand-title">BlueFort</span>
+              <span class="brand-subtitle">Cyber Solutions</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Professional cybersecurity services for organizations seeking to identify risks, improve security visibility, and strengthen their digital environment.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-column-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="why-us.html" class="footer-link">Why BlueFort</a></li>
+            <li><a href="industries.html" class="footer-link">Industries</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Popups Direct Links -->
+        <div>
+          <h4 class="footer-column-title">Services</h4>
+          <ul class="footer-links">
+            <li><button type="button" class="footer-link" data-service-key="vapt">VAPT</button></li>
+            <li><button type="button" class="footer-link" data-service-key="soc">SOC & Security Monitoring</button></li>
+            <li><button type="button" class="footer-link" data-service-key="forensics">Cyber Forensics & Incident Response</button></li>
+            <li><button type="button" class="footer-link" data-service-key="audit">Security Audit & Risk Assessment</button></li>
+            <li><button type="button" class="footer-link" data-service-key="awareness">Security Awareness & Consulting</button></li>
+          </ul>
+        </div>
+
+        <!-- Contact Channels -->
+        <div>
+          <h4 class="footer-column-title">Contact Channels</h4>
+          <ul class="footer-links">
+            <li>
+              <span class="contact-channel-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Email: bluefortcyber.solutions@gmail.com</span>
+              </span>
+            </li>
+            <li>
+              <span class="contact-channel-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>Phone: +1 (800) BLUE-FORT</span>
+              </span>
+            </li>
+            <li>
+              <span class="contact-channel-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn: /company/bluefort-cyber</span>
+              </span>
+            </li>
+            <li>
+              <span class="contact-channel-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+                </svg>
+                <span>WhatsApp: Direct Inquiries</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 BlueFort Cyber Solutions. All Rights Reserved.</div>
+        <div style="font-size:0.8rem; color:var(--text-dim);">Confidentiality & Authorized Testing Guaranteed.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       8. ACCESSIBLE SERVICE DETAIL POPUP / MODAL
+       ========================================================================= -->
+  <div class="modal-overlay" id="serviceModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalServiceTitle" aria-hidden="true">
+    <div class="modal-dialog" id="serviceModalDialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge" id="modalServiceBadge">Service Category</span>
+          <h3 class="modal-title" id="modalServiceTitle">Service Name</h3>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close details popup">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modalServiceBody"></div>
+
+      <div class="modal-footer">
+        <div class="modal-footer-note">
+          All engagements operate strictly within authorized written scope.
+        </div>
+        <button class="btn btn-primary" id="modalCtaBtn" type="button">
+          <span>Request This Service</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/cyber-visual.js"></script>
+  <script src="js/modals.js"></script>
+  <script src="js/assessment-tool.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
