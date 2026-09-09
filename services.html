@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
+  <title>Services | BlueFort Cyber Solutions</title>
+  <meta name="description" content="Explore BlueFort Cyber Solutions services: VAPT, SOC & Security Monitoring, Cyber Forensics & Incident Response, Security Audits, and Security Awareness.">
+  <meta name="theme-color" content="#070e1b">
+
+  
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/modals.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="BlueFort Cyber Solutions Home">
+        <img src="assets/logo.png" alt="BlueFort Cyber Solutions Shield" class="brand-logo-img">
+        <div class="brand-text-wrapper">
+          <span class="brand-title">BlueFort</span>
+          <span class="brand-subtitle">Cyber Solutions</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="why-us.html" class="nav-link">Why BlueFort</a></li>
+          <li><a href="industries.html" class="nav-link">Industries</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+<a href="contact.html" class="btn btn-primary btn-sm">
+          <span>Request Security Assessment</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <div class="section-tag">Enterprise Portfolio</div>
+      <h1 class="page-hero-title">Our Services</h1>
+      <p class="page-hero-subtitle">Practical cybersecurity services for stronger protection and clearer risk visibility.</p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="services-grid">
+        <!-- 1. VAPT -->
+        <div class="glass-card service-card" data-service-key="vapt" id="vapt" role="button" tabindex="0">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <span class="badge badge-info">Offensive Testing</span>
+          </div>
+          <h2 class="service-card-title">Vulnerability Assessment & Penetration Testing (VAPT)</h2>
+          <p class="service-card-desc">
+            Identify and validate security vulnerabilities across web applications, APIs, systems, and authorized environments with manual depth.
+          </p>
+          <div class="service-card-highlights">
+            <span class="service-pill">Web Applications</span>
+            <span class="service-pill">APIs & Endpoints</span>
+            <span class="service-pill">Manual Validation</span>
+            <span class="service-pill">OWASP Top 10</span>
+          </div>
+          <div class="service-card-footer">
+            <button class="learn-more-btn" type="button">
+              <span>View Full Details & Deliverables</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. SOC -->
+        <div class="glass-card service-card" data-service-key="soc" id="soc" role="button" tabindex="0">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <span class="badge badge-low">Defensive Ops</span>
+          </div>
+          <h2 class="service-card-title">SOC & Security Monitoring</h2>
+          <p class="service-card-desc">
+            Monitor security events, analyze suspicious activity, and help organizations gain complete threat visibility across infrastructure.
+          </p>
+          <div class="service-card-highlights">
+            <span class="service-pill">Log Monitoring</span>
+            <span class="service-pill">Threat Detection</span>
+            <span class="service-pill">Incident Triage</span>
+            <span class="service-pill">Threat Hunting</span>
+          </div>
+          <div class="service-card-footer">
+            <button class="learn-more-btn" type="button">
+              <span>View Full Details & Deliverables</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Forensics -->
+        <div class="glass-card service-card" data-service-key="forensics" id="forensics" role="button" tabindex="0">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+              </svg>
+            </div>
+            <span class="badge badge-high">Rapid Response</span>
+          </div>
+          <h2 class="service-card-title">Cyber Forensics & Incident Response</h2>
+          <p class="service-card-desc">
+            Investigate cyber incidents, analyze digital evidence, reconstruct timelines, and support secure recovery and containment.
+          </p>
+          <div class="service-card-highlights">
+            <span class="service-pill">Evidence Analysis</span>
+            <span class="service-pill">Root Cause Analysis</span>
+            <span class="service-pill">Containment</span>
+            <span class="service-pill">Forensic Timelines</span>
+          </div>
+          <div class="service-card-footer">
+            <button class="learn-more-btn" type="button">
+              <span>View Full Details & Deliverables</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. Security Audit -->
+        <div class="glass-card service-card" data-service-key="audit" id="audit" role="button" tabindex="0">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+            </div>
+            <span class="badge badge-medium">Governance</span>
+          </div>
+          <h2 class="service-card-title">Security Audit & Risk Assessment</h2>
+          <p class="service-card-desc">
+            Identify security gaps, evaluate cybersecurity risks across controls, and prioritize improvements based on business impact.
+          </p>
+          <div class="service-card-highlights">
+            <span class="service-pill">Control Review</span>
+            <span class="service-pill">Access & IAM</span>
+            <span class="service-pill">Asset Exposure</span>
+            <span class="service-pill">Risk Prioritization</span>
+          </div>
+          <div class="service-card-footer">
+            <button class="learn-more-btn" type="button">
+              <span>View Full Details & Deliverables</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. Awareness & Consulting -->
+        <div class="glass-card service-card" data-service-key="awareness" id="awareness" role="button" tabindex="0">
+          <div class="service-card-header">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            </div>
+            <span class="badge badge-info">Advisory</span>
+          </div>
+          <h2 class="service-card-title">Security Awareness & Consulting</h2>
+          <p class="service-card-desc">
+            Help employees and leadership improve cybersecurity awareness, reduce human risk, and make practical security improvements.
+          </p>
+          <div class="service-card-highlights">
+            <span class="service-pill">Phishing Awareness</span>
+            <span class="service-pill">Social Engineering</span>
+            <span class="service-pill">Security Roadmaps</span>
+            <span class="service-pill">Advisory Strategy</span>
+          </div>
+          <div class="service-card-footer">
+            <button class="learn-more-btn" type="button">
+              <span>View Full Details & Deliverables</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deliverables Quality Standard Banner -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="glass-card" style="padding:3rem; border-color:var(--border-medium);">
+        <div class="section-tag">Deliverable Standard</div>
+        <h3 style="font-size:1.85rem; color:#ffffff; margin-bottom:1rem;">Professional Security Reports That Empower Engineering & Leadership</h3>
+        <p style="color:var(--text-secondary); max-width:800px; margin-bottom:2rem; line-height:1.7;">
+          Every validated finding across our assessments includes complete technical depth and clear executive context. We classify findings objectively into 5 severity tiers:
+        </p>
+
+        <div class="severity-showcase" style="margin-bottom:2rem;">
+          <span class="badge badge-critical" style="font-size:0.85rem; padding:0.4rem 0.9rem;">Critical Severity</span>
+          <span class="badge badge-high" style="font-size:0.85rem; padding:0.4rem 0.9rem;">High Severity</span>
+          <span class="badge badge-medium" style="font-size:0.85rem; padding:0.4rem 0.9rem;">Medium Severity</span>
+          <span class="badge badge-low" style="font-size:0.85rem; padding:0.4rem 0.9rem;">Low Severity</span>
+          <span class="badge badge-info" style="font-size:0.85rem; padding:0.4rem 0.9rem;">Informational</span>
+        </div>
+
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">
+            <span>Request an Assessment Scope</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- ==================================================================
+       FLOATING WHATSAPP CTA — DIRECT CLIENT INQUIRIES
+       ================================================================== -->
+  <a class="floating-whatsapp" href="https://wa.me/919998383663?text=Hello%20BlueFort%20Cyber%20Solutions%2C%20I%20would%20like%20to%20discuss%20a%20cybersecurity%20requirement." target="_blank" rel="noopener noreferrer" aria-label="Chat with BlueFort Cyber Solutions on WhatsApp" title="Chat on WhatsApp">
+    <span class="whatsapp-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.08 0C5.55 0 .23 5.31.23 11.85c0 2.09.55 4.13 1.59 5.93L.13 24l6.37-1.67a11.8 11.8 0 0 0 5.58 1.42h.01c6.53 0 11.85-5.31 11.85-11.85 0-3.16-1.23-6.13-3.44-8.4Zm-8.42 18.18h-.01a9.82 9.82 0 0 1-5-1.37l-.36-.21-3.78.99 1.01-3.68-.23-.38a9.83 9.83 0 1 1 8.37 4.65Zm5.4-7.36c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.79-1.68-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.09 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg></span>
+    <span class="whatsapp-label">WhatsApp</span>
+    <span class="whatsapp-arrow" aria-hidden="true">↗</span>
+  </a>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer-disclaimer-box">
+        <svg class="disclaimer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+        <div class="disclaimer-text">
+          <strong>Important Disclaimer:</strong> All cybersecurity testing, monitoring, and investigation activities are performed only with proper authorization and within the agreed scope of work.
+        </div>
+      </div>
+
+      <!-- ==================================================================
+           FOOTER — COMPANY, NAVIGATION, SERVICES & CONTACT CHANNELS
+           ================================================================== -->
+      <div class="footer-grid">
+        <!-- FOOTER SECTION 1: BRAND -->
+        <div class="footer-brand-column">
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="BlueFort Cyber Solutions Home">
+            <img src="assets/logo.png" alt="BlueFort Cyber Solutions" class="brand-logo-img">
+            <div class="brand-text-wrapper">
+              <span class="brand-title">BlueFort</span>
+              <span class="brand-subtitle">Cyber Solutions</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            Professional cybersecurity services helping organizations identify risk, strengthen defenses, and protect their digital environment.
+          </p>
+          <a class="footer-cta-link" href="contact.html">Discuss Your Security Needs <span aria-hidden="true">→</span></a>
+        </div>
+
+        <!-- FOOTER SECTION 2: PAGES -->
+        <div class="footer-column">
+          <h4 class="footer-column-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="why-us.html" class="footer-link">Why BlueFort</a></li>
+            <li><a href="industries.html" class="footer-link">Industries</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- FOOTER SECTION 3: SERVICES -->
+        <div class="footer-column">
+          <h4 class="footer-column-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#vapt" class="footer-link">VAPT</a></li>
+            <li><a href="services.html#soc" class="footer-link">SOC &amp; Security Monitoring</a></li>
+            <li><a href="services.html#forensics" class="footer-link">Cyber Forensics &amp; Incident Response</a></li>
+            <li><a href="services.html#audit" class="footer-link">Security Audit &amp; Risk Assessment</a></li>
+            <li><a href="services.html#awareness" class="footer-link">Security Awareness &amp; Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- FOOTER SECTION 4: CONTACT CHANNELS -->
+        <div class="footer-column footer-contact-column">
+          <h4 class="footer-column-title">Contact Channels</h4>
+          <div class="footer-contact-list">
+            <a class="footer-contact-item" href="https://www.google.com/maps/search/?api=1&query=Rajkot%2C%20Gujarat%2C%20India" target="_blank" rel="noopener noreferrer" aria-label="BlueFort location in Rajkot, Gujarat, India">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10.2c0 5.2-8 11.3-8 11.3S4 15.4 4 10.2a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </span>
+              <span><strong>Address</strong><span>Rajkot, Gujarat, India</span></span>
+            </a>
+            <a class="footer-contact-item" href="tel:+919998383663" aria-label="Call BlueFort Cyber Solutions at +91 9998383663">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6.6 3.5 9 3l2 5-2 1.5a14 14 0 0 0 5.5 5.5L16 13l5 2-.5 2.4A3 3 0 0 1 17.6 20C10.1 19.2 4.8 13.9 4 6.4A3 3 0 0 1 6.6 3.5Z"/></svg>
+              </span>
+              <span><strong>Phone</strong><span>+91 9998383663</span></span>
+            </a>
+            <a class="footer-contact-item" href="mailto:bluefortcyber.solutions@gmail.com" aria-label="Email BlueFort Cyber Solutions">
+              <span class="footer-contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+              </span>
+              <span><strong>Email</strong><span>bluefortcyber.solutions@gmail.com</span></span>
+            </a>
+          </div>
+
+          <!-- ==================================================================
+               🔧 EDIT SOCIAL LINKS HERE
+               Change ONLY the href values below when your final profiles are ready.
+               ================================================================== -->
+          <div class="footer-social-wrap">
+            <span class="footer-social-label">Follow BlueFort</span>
+            <div class="footer-social-links" aria-label="BlueFort Cyber Solutions social media links">
+              <a class="footer-social-link" href="https://www.linkedin.com/company/bluefort-cyber/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="EDIT: LinkedIn URL">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5H3V21h3.5V8.5ZM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3ZM21 13.85c0-3.76-2-5.51-4.67-5.51-2.15 0-3.11 1.18-3.65 2v-1.84H9.18V21h3.5v-6.19c0-1.63.31-3.2 2.33-3.2 1.99 0 2.02 1.85 2.02 3.31V21H21v-7.15Z"/></svg>
+              </a>
+              <a class="footer-social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="EDIT: Instagram URL">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a class="footer-social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="EDIT: Facebook URL">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3.31 0-5 1.69-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.66.34-1 1-1Z"/></svg>
+              </a>
+              <a class="footer-social-link" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X" title="EDIT: X URL">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 3H22l-6.77 7.74L23.2 21h-6.4l-5.01-6.55L6.06 21H3l6.62-7.57L2.8 3h6.56l4.53 5.99L18.9 3Zm-1.13 16h1.77L8.3 4.9H6.4L17.77 19Z"/></svg>
+              </a>
+              <a class="footer-social-link" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="EDIT: GitHub URL">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.55 9.55 0 0 1 12 7.2c.85 0 1.7.12 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER SECTION 5: COPYRIGHT -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 BlueFort Cyber Solutions. All Rights Reserved.</div>
+        <div class="footer-legal">Confidentiality &amp; Authorized Testing Guaranteed.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="serviceModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalServiceTitle" aria-hidden="true">
+    <div class="modal-dialog" id="serviceModalDialog">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge" id="modalServiceBadge">Service Category</span>
+          <h3 class="modal-title" id="modalServiceTitle">Service Name</h3>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close details popup">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modalServiceBody"></div>
+      <div class="modal-footer">
+        <div class="modal-footer-note">
+          All engagements operate strictly within authorized written scope.
+        </div>
+        <button class="btn btn-primary" id="modalCtaBtn" type="button">
+          <span>Request This Service</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/modals.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
