@@ -14,7 +14,7 @@
   // Format: International country code + number, digits only (no +, spaces, dashes)
   // Example: '919812345678' for India +91 98123 45678
   // =========================================================================
-  const WHATSAPP_NUMBER = '919998383663'; // BlueFort Cyber Solutions — India +91 9998383663
+  const WHATSAPP_NUMBER = '919824898491'; // BlueFort Cyber Solutions — India +91 9998383663
 
   // Allowed service values — strict whitelist to prevent payload injection via select
   const ALLOWED_SERVICES = [
@@ -268,10 +268,6 @@
 
         // Build the WhatsApp lead message — all values are sanitized before this point
         const waLeadText =
-`🔒 *NEW SECURITY ASSESSMENT INQUIRY*
-━━━━━━━━━━━━━━━━━━━━
-🏢 *BlueFort Cyber Solutions Lead*
-
 👤 *Client Name:* ${nameVal}
 🏢 *Company:* ${companyVal}
 📧 *Business Email:* ${emailVal}
@@ -281,8 +277,6 @@
 📝 *Scope & Requirements:*
 "${messageVal}"
 
-✅ *Authorization Status:* Acknowledged by client
-━━━━━━━━━━━━━━━━━━━━
 _Submitted via BlueFort Web Portal_`;
 
         const waUrl = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(waLeadText);
