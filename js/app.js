@@ -14,7 +14,7 @@
   // Format: International country code + number, digits only (no +, spaces, dashes)
   // Example: '919812345678' for India +91 98123 45678
   // =========================================================================
-  const WHATSAPP_NUMBER = '919824898491'; // BlueFort Cyber Solutions — WhatsApp Inquiry +91 9824898491
+  const WHATSAPP_NUMBER = '919427908021'; // BlueFort Cyber Solutions — WhatsApp Inquiry +91 9824898491
 
   // Allowed service values — strict whitelist to prevent payload injection via select
   const ALLOWED_SERVICES = [
